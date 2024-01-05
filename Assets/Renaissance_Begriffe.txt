@@ -1,0 +1,24 @@
+Renaissance_Begriffe
+
+Todd Howards = Player
+Olaf Scholz = NPC
+Mr. House = Gebäude
+Oblivion = Hintergrund/Boden
+Peeps = NPC/Playerebene
+Berlin = Gebäudeebene
+
+Fußballer = Spielerscript
+XRay = Bewegung auf X-Achse
+YTheory = Bewegung auf Y-Achse
+VanDerLindeGang = Siehe Peeps
+ChineseUnitedFront = Siehe Berlin
+Methamphetamine = Bewegungsgeschwindgekeitsvariable
+Blitzkrieg = Raycaster zur Berechnung von Kollisionen mit Wänden Personen etc.
+Collision = Kollision
+GottaDelta = Scale/Skala (in Inspektor)
+
+MichealBay = Kamerabewegungsscript
+Sir_David_Frederick_Attenborough = Fokuspunkt der Kamera
+TerraX = Wie schnell die Kamera auf der X-Achse nachschwingt
+YChromosome = Wie schnell die Kamera auf der Y-Achse nachschwingt
+Delta_Force = Berechnet wohin sich die Kamera bewegt (um Fokuspunkt zu folgen)
