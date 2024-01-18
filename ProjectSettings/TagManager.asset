@@ -44,3 +44,6 @@ TagManager:
   - name: Nord
     uniqueID: 3955780089
     locked: 0
+  - name: Paradox_Interactive
+    uniqueID: 258503345
+    locked: 0

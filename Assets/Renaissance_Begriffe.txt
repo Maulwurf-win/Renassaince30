@@ -2,10 +2,14 @@ Renaissance_Begriffe
 
 Todd Howards = Player
 Olaf Scholz = NPC
-Mr. House = Gebäude
 Oblivion = Hintergrund/Boden
+Mr. House = Gebäude
+Berliner Grenzschutz = Kollisionauslöser
+Valhalla = Interagierbares (auf Tilemap)
 Peeps = NPC/Playerebene
 Berlin = Gebäudeebene
+Nord = Sortinglayer für NPC's/PC
+Paradox_Interactive = SortingLayer für Kram mit dem man interargiern kann
 
 Fußballer = Spielerscript
 XRay = Bewegung auf X-Achse
@@ -14,7 +18,7 @@ VanDerLindeGang = Siehe Peeps
 ChineseUnitedFront = Siehe Berlin
 Methamphetamine = Bewegungsgeschwindgekeitsvariable
 Blitzkrieg = Raycaster zur Berechnung von Kollisionen mit Wänden Personen etc.
-Collision = Kollision
+Wasted = Eigener Kollisionsrahmen/BoxCollider
 GottaDelta = Scale/Skala (in Inspektor)
 
 MichealBay = Kamerabewegungsscript
@@ -22,3 +26,28 @@ Sir_David_Frederick_Attenborough = Fokuspunkt der Kamera
 TerraX = Wie schnell die Kamera auf der X-Achse nachschwingt
 YChromosome = Wie schnell die Kamera auf der Y-Achse nachschwingt
 Delta_Force = Berechnet wohin sich die Kamera bewegt (um Fokuspunkt zu folgen)
+
+CarCrash = Übergeordnetes Script für alle Objekte mit denen Spieler kollidieren kann
+Filterkaffe = Filter, um Kollisionsresultate zu filtern, oder so, KP really :(
+Hitman = Zeigt mit wie vielen Objekten pro Kollision kollidiert wird/werden kann
+PacMan = Eigener Kollisionsrahmen/BoxCollider 
+MikeTrevor = Text der bei Kollision kommt (Konsole)
+Bethesda_CEO = Todd Howards/ToddHowards (Who would've thougt?)
+
+Diebesgilde = Übergeordnetes Script für alle Objekte mit denen Spieler interagieren kann
+Finish = Zum checken ob mit Objekt interagiert wurde
+
+AsiatedesVertrauens = Script für Truhen
+DDR = Sprite für geöffnete Truhe
+GuldenMenge = Wie viele PC besitzt/erhält
+
+DanD = Script zum auswählen eines Dungeons
+NordGräber = Verfügbare Dungeons zwischen denen gewählt werden kann
+Helgen = Ausgewählter Dungeon
+
+The Doors = Script um in Gebäude zu gehen
+Inside = Gebäude, welches betreten werden soll
+
+Chell = Script um jegliche Innenräume zu verlassen (Dungeons, Häuser, Stalins Büro etc.)
+Wheatley = "Main"-Szene
+Debugging-Begriffe (müssen später allesamt entfernt werden [Optimierung und so]) == Wurst/Radio | print()/Debug.Log()

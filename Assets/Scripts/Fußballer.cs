@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Fußballer : MonoBehaviour
 {
-    private BoxCollider2D Collision; 
+    private BoxCollider2D Wasted; 
     private Vector3 GottaDelta;
     float XRay;
     float YTheory;
@@ -18,7 +18,7 @@ public class Fußballer : MonoBehaviour
     private void Start()
     {
         //Spieler-Kollidierer
-        Collision = GetComponent<BoxCollider2D>();
+        Wasted = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class Fußballer : MonoBehaviour
         //Nimmt Pfeiltasten/WASD wahr
         XRay = Input.GetAxisRaw("Horizontal");
         YTheory = Input.GetAxisRaw("Vertical");
-        print(XRay);
+        //print(XRay);
         //Setzt Delta zurück
         GottaDelta = new Vector3(XRay, YTheory).normalized;
 
@@ -41,17 +41,17 @@ public class Fußballer : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
         //Verhindert das Spieler in Gebäudewände/NPCS rein-/durchclippen kann
-        Blitzkrieg = Physics2D.BoxCast(transform.position, Collision.size, 0, new Vector2(0, GottaDelta.y), Mathf.Abs(GottaDelta.y * Time.deltaTime * Methamphetamine), LayerMask.GetMask(VanDerLindeGang, ChineseUnitedFront));
+        Blitzkrieg = Physics2D.BoxCast(transform.position, Wasted.size, 0, new Vector2(0, GottaDelta.y), Mathf.Abs(GottaDelta.y * Time.deltaTime * Methamphetamine), LayerMask.GetMask(VanDerLindeGang, ChineseUnitedFront));
         if(Blitzkrieg.collider == null)
         {
-            print(VanDerLindeGang);
+            //print(VanDerLindeGang);
             transform.Translate(0, GottaDelta.y * Time.deltaTime * Methamphetamine, 0);
         }
 
-        Blitzkrieg = Physics2D.BoxCast(transform.position, Collision.size, 0, new Vector2(GottaDelta.x, 0), Mathf.Abs(GottaDelta.x * Time.deltaTime * Methamphetamine), LayerMask.GetMask(VanDerLindeGang, ChineseUnitedFront));
+        Blitzkrieg = Physics2D.BoxCast(transform.position, Wasted.size, 0, new Vector2(GottaDelta.x, 0), Mathf.Abs(GottaDelta.x * Time.deltaTime * Methamphetamine), LayerMask.GetMask(VanDerLindeGang, ChineseUnitedFront));
         if(Blitzkrieg.collider == null)
         {
-            print(ChineseUnitedFront);
+            //print(ChineseUnitedFront);
             transform.Translate(GottaDelta.x * Time.deltaTime * Methamphetamine, 0, 0);
         }
         //Sorgt für Bewegung
