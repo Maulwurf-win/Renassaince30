@@ -35,6 +35,6 @@ public class CarCrash : MonoBehaviour
     protected virtual void MikeTrevor(Collider2D coll)
     {
         //Sagt wie Objekt hieﬂt mit dem kollidiert wurde
-        Debug.Log(coll.name);
+        Debug.Log("Jesse, we have to cook " + this.name + "!");
     }
 }

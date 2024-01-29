@@ -14,6 +14,7 @@ public class FDL : Diebesgilde
             Finish = true;
             //print("Wurstfinger");
             GetComponent<SpriteRenderer>().sprite = DDR;
+            GameManager.instance.ShowText("+" + GuldenMenge + " Gulden", 25, Color.yellow, transform.position, Vector3.up * 25, 1.5f);
             Debug.Log("Eyyy Vitoo, here's " + GuldenMenge + " dollar for ya!");
         }
     }

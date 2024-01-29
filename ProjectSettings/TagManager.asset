@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - "Sturmm\xE4ntel"
   layers:
   - Default
   - TransparentFX
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Paradox_Interactive
     uniqueID: 258503345
+    locked: 0
+  - name: Wunderwaffe
+    uniqueID: 1106645141
     locked: 0

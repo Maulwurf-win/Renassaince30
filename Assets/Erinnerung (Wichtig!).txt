@@ -11,6 +11,8 @@ Mindestens 2 GB auf C (zum speichern) freihalten!!!
 Ab und zu in git/Unity Version Control hochladen!!!
 	(Nicht übermüdet morgens um 5!) Angucken wie man wirklich mit Version Control umgeht 
 
+Zu speichernde Variable + "|" = erfolgreiche Speicherung (In Theorie)
+
 Wir brauchen besseres Speicher-Sytem, das momentane speichert nur bei Levelübergängen
 	Nvm, das unten sieht aber trotzdem nützlicher fürs Endprodukt aus
 Idee wäre z.B https://www.google.com/search?client=firefox-b-d&q=unity+how+tom+ake+savestate#fpstate=ive&vld=cid:76799da9,vid:aUi9aijvpgs,st:0
