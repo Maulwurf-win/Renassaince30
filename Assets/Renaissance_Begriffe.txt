@@ -1,12 +1,43 @@
 Renaissance_Begriffe
-
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+SZENE
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 Generell:
 	Todd Howards = Player
 	Olaf Scholz = NPC
 	Bobby Kotick = Enemy
-	Dönerbox = Truhen
-	Warlin Door/Aperture Sciene = Teleportiert zwischen Szenen
 	Bayonet = Nahkampfwaffe (Erstma)
+	In Flames = Fackel/Lichtquelle
+	Lazaret = Heilt Spieler bei Kontakt
+	Dönerbox = Truhen
+	McDonaldsMenu = Pausemenü
+		Alt(F4) = Knopf zum verlassen des Hauptmenüs
+			DutchsCampKasse = Container für ausegürstete Waffe/momentanen Spielerskin + XP und Gulden (und später vielleicht noch weiteren Kram)
+				V's Apartment = Container für Waffenbild
+					V-1 = Waffenabbilddung
+					Schleifstein = Knopf zum Waffenupgraden
+				Style = Momentaner Skin
+				Dunkirk = Pfeil um letzten Skin auszuwählen
+				Vorwärts immer... = Pfeil um nächsten Skin auszuwählen
+			Versicherung = Leben-Label
+				Promille = Momentanes Leben in Zahlen
+			Level = Level-Label
+				Skill-Issue = Momentanes Level
+			Eddies = Geld-Label
+				Luxemburg = Momentane Gulden
+			Industrialisierung = Balken, welcher anzeigt wie viele XP zun näcsten Level fehlen
+			Fortschritt = Zeigt wie viele XP zun näcsten Level fehlen in Zahlen
+	DefinitionOfInsanity = Lebensbalken 
+		MetalHealth = Balken der zeigt wie viel Leben man noch hat (UI)
+	WhereTheDeadShipsDwell = Deathscreen
+		DeathofBellows = Deathscreenfenster
+		ToMain = Button zum Respawnen
+
+	Warlin Door/Aperture Sciene = Teleportiert zwischen Szenen
+	Kiev = Objekte die man zerstören kann
+
 Gridnamen:
 	Oblivion/BOden = Boden/Hintergrund
 	Mr. House/Mexico = Gebäude/Wände
@@ -22,57 +53,52 @@ SortingLayer:
 Tags:
 	Sturmmäntel = Alles was Schaden nehmen kann
 
-Fixer = Script mit dem sich bewegt werden kann
-	XRay = Bewegung auf X-Achse
-	Yggdrasil = Bewegung auf Y-Achse
-	VanDerLindeGang = Siehe Peeps
-	ChineseUnitedFront = Siehe Berlin
-	Methamphetamine = Bewegungsgeschwindgekeitsvariable
-	Blitzkrieg = Raycaster zur Berechnung von Kollisionen mit Wänden Personen etc.
-	Wasted = Eigener Kollisionsrahmen/BoxCollider 
-	GottaDelta = Scale/Skala (in Inspektor) {WTF MEINTEST DU DAMIT!??!?!?!?!?!}
+Animator Controller:
+	Obama = Für Spielerwaffe
+	Hades = Für Fackel/Lichtquelle
+	TheStrangeMan = Für Todesmenü
 
-Benny = Spielerscript
-	XPath = Bewegungseingabe auf X-Achse [Tastatur]
-	YTheory = Bewegungseingabe auf Y-Achse [Tastatur]
+Animations:
+	Schlag = Well... Zuschlagen halt, gelle?
+	Stillstand = Idle Animation für Schwert
+	Into the Flames = Fackelanimation
+	Viking Death March = Zeigt Deathscreen
+	Back to Life = Versteckt Deathscreen
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+SCRIPTS
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+Manager & anderer Backendstuff
+--------------------------------------------------------------------------------------------------------------------------
+GameManager = Script für Grundunktionen (Speicherstände etc.)
+	Jekyll = Trigger für Respwan-Knopf
+	Vegas  = Siehe Todd Howards
+	JellyBeans = Siehe Bayonet
+	Rollin_Air_Raid_Vehicle = Siehe McDonaldsMenu
+	Quick_Time_Event = Das Eventsystem (Nicht löschen, sonst passieren... well, schlimme Dinge!!)
+	USB_Hub = Das HUD
+	SpielerSprites = SpielerSkins (Eigentlich selbsterklärend, aber trotzdem nur so zum sichergehen)
+	WaffenSprites = Für verschiedene Waffen halt (Keine Ahnung wie man sowas erklären soll)
+	Waffenpreise = Komplett selbsterklärend (Warum TF schreib ich das überhaupt bei Erklärungen auf?)
+	XPTabelle = Wie viel XP Spieler zum nächsten Level brauct
+	LoveCraftBar = Siehe MetalHealth
+	ODeath = Animator für Deathscreen
+	JellyBeans = PauseMenü
+	Gulden = Währung
+	Lebenserfahrung = Wie viel XP SPieler momentan hat
+	PropagandaStyle = Aktiviert Video in Szene
+	HaveFaith = Aktiviert Video in UI
+	RogerClark = Schaltet PauseMenü (+ Video) an/aus
+
+SceneManager = Script zum normalen Wechseln zwischen Szenen
 
 MichealBay = Kamerabewegungsscript
 	Sir_David_Frederick_Attenborough = Fokuspunkt der Kamera
 	TerraX = Wie schnell die Kamera auf der X-Achse nachschwingt
 	YChromosome = Wie schnell die Kamera auf der Y-Achse nachschwingt
 	Delta_Force = Berechnet wohin sich die Kamera bewegt (um Fokuspunkt zu folgen)
-
-CarCrash = Übergeordnetes Script für alle Objekte mit denen Spieler kollidieren kann
-	Filterkaffe = Filter, um Kollisionsresultate zu filtern, oder so, KP really :(
-	Hitman = Zeigt mit wie vielen Objekten pro Kollision kollidiert wird/werden kann
-	PacMan = Siehe Wasted 
-	MikeTrevor = Text der bei Kollision kommt (Konsole)
-	Bethesda_CEO = Todd Howards/ToddHowards (Who would've thougt?)
-
-Diebesgilde = Übergeordnetes Script für alle Objekte mit denen Spieler interagieren kann
-	Finish = Zum checken ob mit Objekt interagiert wurde
-
-AsiatedesVertrauens = Script für Truhen
-	DDR = Sprite für geöffnete Truhe
-	GuldenMenge = Wie viele PC besitzt/erhält
-
-DanD = Script zum auswählen eines Dungeons
-	NordGräber = Verfügbare Dungeons zwischen denen gewählt werden kann
-	Helgen = Ausgewählter Dungeon
-
-The Doors = Script um in Gebäude zu gehen
-	Inside = Gebäude, welches betreten werden soll
-
-Chell = Script um jegliche Innenräume zu verlassen (Dungeons, Häuser, Stalins Büro etc.)
-	Wheatley = "Main"-Szene
-
-GameManager = Script für Grundunktionen (Speicherstände etc.)
-	SpielerSprites = SpielerSkins (Eigentlich selbsterklärend, aber trotzdem nur so zum sichergehen)
-	WaffenSprites = Für verschiedene Waffen halt (Keine Ahnung wie man sowas erklären soll)
-	Waffenpreise = Komplett selbsterklärend (Warum TF schreib ich das überhaupt bei Erklärungen auf?)
-	XPTabelle = Wie viel XP Spieler zum nächsten Level brauct
-	Lebenserfahrung = Wie viel XP SPieler momentan hat
-	Gulden = Währung
 
 SchwebebalkenText = Script für floatenden(?)/schwebenden Text
 	Activision = Zum entscheiden ob Text gerade aktiv ist oder nicht
@@ -88,21 +114,25 @@ SchwebebalkenTextManager = Script zum verwalten von schwebenden Texten? KP... re
 	Rede = Text-Prefab
 	SchwebeText = SchwebebalkenText, glaube...
 	Wuppertal = Richtiger Text
-	
-ABomb = Script für Waffen
-	CartmanRage = WaffenSchaden
-	Sisu = Pushbackkraft von Waffen
-	Innovation = WaffenLevel
-	KalterKrieg = Cooldown
-	Kaiserschlacht = Letzter Schlag
-	Himmelsschmiede = Verändert WaffenSprite
-	Stalinistics = Killcount
-	WinterWar = Schlag
+--------------------------------------------------------------------------------------------------------------------------
+UI-Gedöns
+--------------------------------------------------------------------------------------------------------------------------
+ChefRamsey = Script für die Knöpfe im Hauptmenü
+	GMan = Optionsmenü
+	Oxefnree = Startet Spiel
+	MrFreeman = Ruft Optionsmenü auf
+	Further = Wechselt zu Credits
+	Titanic = Schließt Spiel
 
-Damage Case = Container-Script für Schaden
-	Japan = Von wo Schaden/Schubkraft kommt
-	Kamikaze = CartmanRage
-	USNavy = Sisu
+Spielerbogen = Script für Spielermenü
+	SkinWahl = Iteration des Spielerskins/-sprites
+	Arrow_to_the_knee = Wechselt Skin (im Menü)
+	Mussolini = Legt Richtung des Skinwechsels fest
+	Adrianne_Avenicci = Updaet das Spielermenü falls Waffe geupgradet wurde
+	Terms_of_Service_Update = Updatet das Spielermenü
+--------------------------------------------------------------------------------------------------------------------------
+PC-/NPC-Stuff
+--------------------------------------------------------------------------------------------------------------------------
 
 Soviet = Script für alle(s) was Angriffe austeilen/einstecken kann
 	Panzerung = Hitpoints
@@ -115,6 +145,25 @@ Soviet = Script für alle(s) was Angriffe austeilen/einstecken kann
 		Artillerie = dmg
 	Trotsky = Funktion bei Tod
 
+Fixer = Script mit dem sich bewegt werden kann
+	XRay = Bewegung auf X-Achse
+	Yggdrasil = Bewegung auf Y-Achse
+	VanDerLindeGang = Siehe Peeps
+	ChineseUnitedFront = Siehe Berlin
+	Methamphetamine = Bewegungsgeschwindgekeitsvariable
+	Blitzkrieg = Raycaster zur Berechnung von Kollisionen mit Wänden Personen etc.
+	Wasted = Eigener Kollisionsrahmen/BoxCollider 
+	GottaDelta = Scale/Skala (in Inspektor) {WTF MEINTEST DU DAMIT!??!?!?!?!?!}
+
+Benny = Spielerscript
+	ISP = Siehe Style (is halt nur für außerhalb des Menüs [KP ob das ne verständliche Erklärung is ¯\_(ツ)_/¯])
+	Starfield = Siehe Todd Howards
+	EminemShow = Trigger für Deathscreen
+	StayAlive = Ob Spieler gerade tot oder lebendig is
+	XPath = Bewegungseingabe auf X-Achse [Tastatur]
+	YTheory = Bewegungseingabe auf Y-Achse [Tastatur]
+	Regierungswechsel = Wechselt Spielerskin/-sprite
+
 MicahBell = Script für Feinde
 	Trigger = Ab welcher Distanz Feind anfängt Spieler zu jagen
 	Aufmerksamkeitsspanne = Ab welcher Distand Feind aufhört Spieler zu jagen
@@ -123,4 +172,71 @@ MicahBell = Script für Feinde
 	Filter = Siehe Filterkaffe
 	hits = Siehe Hitman
 
+Ikea = Script für Bosse
+	KöttbullarGeschwindigkeit = Geschwindigkeit von schützenden Gegnern
+	Stockholm = Distanz zwischen Boss und schützenden Gegnern
+	Köttbullar = Schützende Gegner
+
+
+Damage Case = Container-Script für Schaden
+	Japan = Von wo Schaden/Schubkraft kommt
+	Kamikaze = WaffenSchaden
+	USNavy = Pushbackkraft von Waffen
+
+ABomb = Script für Waffen
+	CartmanRage = Siehe Kamikaze
+	Sisu = Siehe Sisu
+	Innovation = WaffenLevel
+	KalterKrieg = Cooldown
+	Kaiserschlacht = Letzter Schlag
+	Himmelsschmiede = Verändert WaffenSprite
+	Stalinistics = Killcount
+	WinterWar = Schlag
+
+Shitbox = Hitbox-Script für Gegner
+	Kollaterschalschaden = Siehe Kamikaze
+	PanzerPush = Siehe USNavy
+	Windhelm = Siehe Sturmmäntel
+	ChessClub = Siehe ToddHowards
+
+American_Healthcare = Script zum Heilen an bestimmten Ort (z.B. Lazert)
+
+SkyrimCourier = Script um NPC's Dinge "sagen" zu lassen
+	letzterDrachenschrei = Wann letztes Mal NPC-Text ausgelöst wurde
+--------------------------------------------------------------------------------------------------------------------------
+Kollidierbarer Scheiß (nicht lebendiger Kram wie Kisten usw.)
+--------------------------------------------------------------------------------------------------------------------------
+CarCrash = Übergeordnetes Script für alle Objekte mit denen Spieler kollidieren kann
+	Filterkaffe = Filter, um Kollisionsresultate zu filtern, oder so, KP really :(
+	Hitman = Zeigt mit wie vielen Objekten pro Kollision kollidiert wird/werden kann
+	PacMan = Siehe Wasted 
+	MikeTrevor = Text der bei Kollision kommt (Konsole)
+	Bethesda_CEO = Todd Howards/ToddHowards (Who would've thougt?)
+
+Diebesgilde = Übergeordnetes Script für alle Objekte mit denen Spieler interagieren kann
+	Finish = Zum checken ob mit Objekt interagiert wurde
+
+AsiatedesVertrauens = Script für Truhen
+	DDR = Sprite für geöffnete Truhe
+	GuldenMenge = Wie viele PC besitzt/erhält
+--------------------------------------------------------------------------------------------------------------------------
+Kram für Szenenwechsel (Türen etc.)
+--------------------------------------------------------------------------------------------------------------------------
+
+DanD = Script zum auswählen eines Dungeons
+	NordGräber = Verfügbare Dungeons zwischen denen gewählt werden kann
+	Helgen = Ausgewählter Dungeon
+
+The Doors = Script um in Gebäude zu gehen
+	Inside = Gebäude, welches betreten werden soll
+
+Chell = Script um jegliche Innenräume zu verlassen (Dungeons, Häuser, Stalins Büro etc.)
+	Wheatley = "Main"-Szene
+--------------------------------------------------------------------------------------------------------------------------
+Abfall (Falls man es doch noch recyclen kann, ne?)
+--------------------------------------------------------------------------------------------------------------------------
+NeverFadeAway = Script zum alternativen verlassen des Pausemenüs 
+	Johnny = Pausemenü
+	Rogue = Schaltet Pausemenü aus
+--------------------------------------------------------------------------------------------------------------------------
 Debugging-Begriffe (müssen später allesamt entfernt werden [Optimierung und so]) == Wurst/Radio | print()/Debug.Log()

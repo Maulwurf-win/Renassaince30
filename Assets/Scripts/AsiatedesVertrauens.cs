@@ -15,6 +15,7 @@ public class AsiatedesVertrauens : Diebesgilde
             Finish = true;
             print(Finish);
             GetComponent<SpriteRenderer>().sprite = DDR;
+            GameManager.instance.Gulden += GuldenMenge;
             GameManager.instance.ShowText("Eyyy Vitoo, here's " + GuldenMenge + " dollar for ya!", 25, Color.yellow, transform.position, Vector3.up * 25, 2.0f);
             Debug.Log("Eyyy Vitoo, here's " + GuldenMenge + " dollar for ya!");
         }

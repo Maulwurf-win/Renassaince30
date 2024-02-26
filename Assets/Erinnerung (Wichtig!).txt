@@ -5,15 +5,26 @@ NICHT VERGESSEN!!:
 Bestimmte Strings/Bools schützen!!!
 
 Strg + S vor'm verlassen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+V halten zum Objektclippen
+Mehrere Sprites in Inspektor ziehen kreirt Animation (+ Animator & Controller)
 
 Mindestens 2 GB auf C (zum speichern) freihalten!!!
 
 Ab und zu in git/Unity Version Control hochladen!!!
 	(Nicht übermüdet morgens um 5!) Angucken wie man wirklich mit Version Control umgeht 
 
+Ordner aufräumen (insbesondere den für Scripts!!)
+
+Vor dem publishen Versuchskram und print/Debug.Log Kram aus allen Scripts rauslöschen (Im Zweifel zumindest rauskommentieren)
 Zu speichernde Variable + "|" = erfolgreiche Speicherung (In Theorie)
+
+Hitbox von NPC/Scholz == SCHRECKLICH!!!!! MUß GEFIXT WERDEN, UNBEDINGT!!!!!!!!!!!!
+	(Bobbys ebenfalls, aber nich ganz so dringend)
+	Enemy-BoxCollider scheint kurz nach Hit aus irgendnem Grun' inaktiv zu wer'n
 
 Wir brauchen besseres Speicher-Sytem, das momentane speichert nur bei Levelübergängen
 	Nvm, das unten sieht aber trotzdem nützlicher fürs Endprodukt aus
-Idee wäre z.B https://www.google.com/search?client=firefox-b-d&q=unity+how+tom+ake+savestate#fpstate=ive&vld=cid:76799da9,vid:aUi9aijvpgs,st:0
-	(Hoffemtlich nicht viel zu komplex zu kapieren)
+	Idee wäre z.B https://www.google.com/search?client=firefox-b-d&q=unity+how+tom+ake+savestate#fpstate=ive&vld=cid:76799da9,vid:aUi9aijvpgs,st:0
+		(Hoffemtlich nicht viel zu komplex zu kapieren)
+
+Beseere Gegner-KI (dringend!!!)

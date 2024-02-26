@@ -831,6 +831,37 @@ Transform:
   - {fileID: 60889782}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1136479478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136479479}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1136479479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136479478}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.61, y: 1.12, z: -0.02809912}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1482657282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,71 +1386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a90bc1206baa6f498944476fe2b624e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sir_David_Frederick_Attenborough: {fileID: 1890952394}
+  Sir_David_Frederick_Attenborough: {fileID: 0}
+  It_Just_Works: Todd Howards
   TerraX: 0.3
   YChromosome: 0.15
---- !u!1001 &1890952393
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.46011448
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7074737718659996037, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-      propertyPath: m_Name
-      value: Todd Howards
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
---- !u!4 &1890952394 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6429778465463064319, guid: b5b47551bd5fc5e4fbeb59c4d5519c0f, type: 3}
-  m_PrefabInstance: {fileID: 1890952393}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2000294187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,5 +1794,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1770870715}
   - {fileID: 1111338734}
-  - {fileID: 1890952393}
   - {fileID: 91262355}
+  - {fileID: 1136479479}

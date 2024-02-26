@@ -1,0 +1,15 @@
+Basics:
+	Movement (100% [Glaube])
+	NPCs/KI (10%)
+	Gebiete/Gebäude (1-5%)
+	UI (30%)
+	Musik (2% oder so)
+	Trade + Crafting (0%)
+	Story (1%)
+	Sprites/Texturen [circa. 10-20%]
+	Animations (1%)
+	Cutscenes (0%)
+	Marketing (0%)
+
+Weiterer Kram:
+	
